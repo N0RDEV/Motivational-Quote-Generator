@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Motivational Generator</title>
+		<link rel="stylesheet" href="Resources/CSS/styles.css" />
+		<!-- Boxicon icons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header style="font-size: 30px; text-align: center">
+				Motivational Start
+			</header>
+			<div class="content">
+				<div class="quote-area">
+					<i class="bx bxs-quote-left"></i>
+					<p class="quote">
+						It's toxic desire to try to be perfect. I realized later in life
+						that the challenge is not to be perfect. It's to be whole.
+					</p>
+					<i class="bx bxs-quote-right"></i>
+				</div>
+				<div class="author">
+					<span>__</span>
+					<span class="name">Jane Fonda</span>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class="features">
+					<ul>
+						<li class="sound"><i class="bx bxs-volume-full"></i></li>
+						<li class="copy"><i class="bx bxs-copy-alt"></i></li>
+						<li class="mute"><i class="bx bxs-volume-mute"></i></li>
+						<li onclick="playRandomVideo()"><i class="bx bxs-dice-4"></i></li>
+					</ul>
+					<button>New Quote</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="video-background">
+			<div class="video-foreground">
+				<iframe
+					id="youtube-video"
+					width="auto"
+					height="auto"
+					frameborder="0"
+					allow="autoplay; encrypted-media;"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+
+		<div class="video-background">
+			<div class="video-foreground">
+				<iframe
+					id="youtubePlayer"
+					width="auto"
+					height="auto"
+					frameborder="0"
+					allow="autoplay; encrypted-media;"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+
+		<script src="Resources/js/main.js"></script>
+
+		<script src="Resources/js/script.js"></script>
+
+		<script src="Resources/js/randomvid.js"></script>
+	</body>
+</html>
